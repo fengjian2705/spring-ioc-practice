@@ -48,6 +48,8 @@ public class DependencyInjectionDemo {
         //  No qualifying bean of type 'org.springframework.context.ApplicationContext' available
 //        ApplicationContext applicationContext = beanFactory.getBean(ApplicationContext.class);
 //        System.out.println("applicationContext: " + applicationContext);
+
+        whoIsIoCContainer(userRepository, beanFactory);
     }
 
     public static void whoIsIoCContainer(UserRepository userRepository, BeanFactory beanFactory) {
